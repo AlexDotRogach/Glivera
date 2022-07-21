@@ -1,0 +1,178 @@
+@media (max-width: 1090px) {
+	.container {
+		padding: 25px 30px;
+	}
+    .user__counter {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+	.info {
+		&__item {
+			grid-template: 60px / 16px 70px 85px 1fr 80px 57px;
+            column-gap: 10px;
+		}
+	}
+    .info__manipulation {
+        margin: 3px 32px 0 0;
+    }
+}
+
+@media (max-width: 860px) {
+    .info {
+        padding-left: 60px;
+    }
+
+    .menu {
+        display: block;
+        z-index: 1;
+    }
+
+    .user {
+        position: relative;
+        left: -10px;
+        top: 30px;
+        height: 400px;
+        &__message {
+            padding: 29px 10px 32px 10px;
+        }
+        &__main, &__info {
+            padding: 20px 0 23px  10px;
+        }
+        &__subscribe {
+            padding: 20px 0 24px 0;
+        }
+        &__img {
+            display: none;
+        }
+    }   
+
+    .user__active {
+        position: relative;
+        background: rgba(0,0,0,.7);
+        left: 2px;
+        top: 50px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .info__search {
+        border: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .user__text, .user__counter, .user__profile, .user__setting, .user__question, .user__write, .user__buy {
+        font-size: 10px;
+    } 
+
+    .user__buy {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .info {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .info__delete, .info__add, .info__unread, .info__archive, .info__lookfor {
+        font-size: 10px;
+    }
+    .info__item {
+        font-size: 10px;
+    }
+
+    .info__header {
+        justify-content: flex-end;
+    }
+
+    .info__search {
+        padding-left: 15px;
+        width: 70px;
+        position: relative;
+    }
+    .info__buy img{
+        width: 7px;
+        height: 7px;
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 560px) {
+    .info {
+        width: 350px;
+    }
+
+    .info__header {
+        margin-left: 50px;
+    }
+
+    .info__item {
+        grid-template: 60px / 12px 85px 60px 80px 57px;
+        column-gap: 5px;
+    }
+
+    .info__user {
+        display: none
+    }
+
+    .info__pages {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .user__text, .user__counter, .user__profile, .user__setting, .user__question, .user__write, .user__buy {
+        font-size: 7px;
+    } 
+
+    .info {
+        width: 300px;
+    }
+
+    .info__item {
+        grid-template: 60px / 12px 45px 60px 80px 57px;
+        column-gap: 5px;
+    }
+
+    .info__item {
+        font-size: 9px;
+    }
+
+    .info__delete {
+        margin-right: 4px;
+    }
+
+    .info__manipulation {
+        margin: 3px 4px 0 0;
+    }
+
+    .info__unread {
+        margin-right: 5px;
+    }
+
+    .menu {
+        background: url("../../icons/menu_media.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 370px) {
+    .info {
+        width: 250px;
+    }
+
+    .info__header {
+        position: relative;
+        left: 5px;
+    }
+
+    .info__search {
+        padding-left: 3px;
+    }
+}

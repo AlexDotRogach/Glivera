@@ -1,0 +1,77 @@
+@mixin fs16ColOraCirB{
+    font-size: 16px;
+    font-family: "Circe Bold";
+    color: rgb(219,147,81);
+    font-weight: bold;
+}
+
+@mixin fs16ColWhiCirR {
+    font-size: 16px;
+    font-family: "Circe Regular";
+    color: white;
+}
+.user {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0px;
+    transition: all 0.3s;
+    background:rgb(29, 28, 28);
+
+    &__img {
+        border: 1px solid rgb(219,147,81);
+        overflow: hidden;
+    }
+    &__img img{
+        object-fit: cover;
+        width: 220px;
+        height: 293px;
+        position: relative;
+        right: 15px;
+    }
+    // first 
+    &__message {
+        padding: 49px 30px 52px 30px;
+        border-bottom: 1px solid rgb(36, 36, 36);
+        display: flex;
+    }
+    &__text, &__counter {
+        @include fs16ColOraCirB;
+    }
+    &__counter {
+        font-family: "Circe Regular";
+        font-weight: normal;
+    }
+    &__counter {
+        margin-left: 60px;
+    }
+    // second and third
+    &__main, &__info {
+        padding: 50px 0 53px  30px;
+        border-bottom: 1px solid rgb(36, 36, 36);
+    }
+    &__profile, &__question {
+        margin-bottom: 22px;
+    }
+    &__profile, &__setting, &__question, &__write {
+        @include fs16ColWhiCirR;
+    }
+    //last
+    &__subscribe {
+        padding: 50px 0 54px 0;
+        background: rgb(219,147,81);
+        text-align: center;
+    }
+    &__buy {
+        font-size: 16px;
+        font-family: "Circe Bold";
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.user__active {
+    width: 220px;
+    visibility: visible;
+    transition: all 1s ease-out;
+}
+

@@ -1,0 +1,17 @@
+.container {
+	background: rgb(21,21,21);
+	padding: 35px 138px 227px 139px;
+	display: flex;
+	position: relative;
+}
+
+.menu {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	background: url("../icons/menu.png");
+	display: none;
+	cursor: pointer;
+}
